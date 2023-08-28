@@ -1,0 +1,55 @@
+.wrapper {
+  background-color: #F2F2F2;
+  padding: 18px;
+  display: inline-block;
+
+  .round-dial {
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    position: relative;
+    background-color: white;
+  }
+
+  .gauge-reading {
+    text-align: center;
+    margin: 10px 0 0 0;
+  }
+}
+
+.needle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 0;
+  height: 1.5px;
+  width: 120%;
+  display: flex;
+  justify-content: flex-end;
+  transform: translate(-50%, -50%);
+
+  .absolute-needle-tip {
+    height: 1.5px;
+    width: 4px;
+    background-color: black;
+  }
+
+  .current-temp-tip {
+    height: 1.5px;
+    width: 18px;
+    background-color: black;
+  }
+}
+
+.max-temp {
+  rotate: 45deg;
+}
+
+.min-temp {
+  rotate: 135deg;
+}
+
+.current-temp {
+  width: 100%;
+}

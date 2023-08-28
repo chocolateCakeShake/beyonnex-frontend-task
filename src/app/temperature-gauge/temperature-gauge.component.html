@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <div class="round-dial">
+    <div class="needle min-temp">
+      <div class="absolute-needle-tip"></div>
+    </div>
+    <div class="needle current-temp"style="rotate: {{needleAngle}}deg">
+      <div class="current-temp-tip"></div>
+    </div>
+    <div class="needle max-temp">
+      <div class="absolute-needle-tip"></div>
+    </div>
+  </div>
+  <p class="gauge-reading">{{errorText ? errorText : currentTemp + '°C'}}</p>
+</div>
