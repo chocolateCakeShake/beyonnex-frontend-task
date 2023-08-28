@@ -6,9 +6,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Temperature Gauge
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The `temperature-gauge` component is the reusable component that can be used to display the temperature gauge. The component takes the following inputs:
+  - `minTemp` - The minimum value of the gauge
+  - `maxTemp` - The maximum value of the gauge
+  - `currentTemp` - The current value of the gauge
+
+Some error handling has also been added to handle invalid inputs, for example if the current temperature is outside the min-max range.
+
 
 ## Build
 
